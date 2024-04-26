@@ -229,3 +229,5 @@ yarn-error.log
 *.log
 *.pid
 *.pid.lock
+venvis/
+venvis*/
