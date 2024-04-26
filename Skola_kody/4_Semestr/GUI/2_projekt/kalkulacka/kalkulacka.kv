@@ -1,0 +1,150 @@
+<Button@Button>
+    #background_normal: ''
+    font_size: "16sp"
+
+<TextBox@TextInput>
+    font_size: "16sp"
+    readonly: True
+    multiline: False
+    halign: "right" #odkud kam se zapisuje
+
+
+CalculatorManager:
+    CalculatorWidget:
+
+<CalculatorWidget>:
+    name: "prvni"
+
+    BoxLayout: #-- sestaveniElementu
+        orientation: "vertical"
+
+        TextBox:
+            id: vstup
+            text: "0"
+            size_hint_y: None
+            height: 64
+
+        TextBox:
+            id: vystup
+            text: ""
+            font_size: "32sp"
+            size_hint_y: None
+            height: 128
+
+        GridLayout: #udava pocet sloupcu, radku
+            cols: 4
+            rows: 6
+
+            # Sloupec 1
+
+            Button:
+                id: rezim_button_1
+                text: "AC"
+                background_color: (0, 0, 0, 1)
+
+            Button:
+                id: rezim_button_2
+                text: "C"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                #font_size: 32
+                id: zmena_barvy
+                background_normal: 'Day_night.jpeg'
+
+            Button:
+                background_normal: 'veda.jpg'
+                id: prepnuti_kalkulacky
+                #font_size: 32
+
+            # SLOUPEC 2
+            Button:
+                id: rezim_button_3
+                text: "7"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_4
+                text: "8"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_5
+                text: "9"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_6
+                text: "*"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            # SLOUPEC 3
+            Button:
+                id: rezim_button_7
+                text: "4"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_8
+                text: "5"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_9
+                text: "6"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_10
+                text: "-"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            # SLOUPEC 4
+            Button:
+                id: rezim_button_11
+                text: "1"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_12
+                text: "2"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            Button:
+                id: rezim_button_13
+                text: "3"
+                background_color: (0.7, 0.7, 0.7, 1)
+
+
+            Button:
+                id: rezim_button_14
+                text: "+"
+                #font_size: 32
+                background_color: (0.7, 0.7, 0.7, 1)
+
+            # SLOUPEC 5
+
+            Button:
+                id: rezim_button_15
+                text: "."
+                #font_size: 32
+                background_color: (0.7, 0.7, 0.7, 1)
+            Button:
+                id: rezim_button_16
+                text: "0"
+                #font_size: 32
+                background_color: (0.7, 0.7, 0.7, 1)
+
+
+            Button:
+                id: rezim_button_17
+                text: "="
+                #font_size: 32
+                background_color: (0.7, 0.7, 0.7, 1)
+
+
+            Button:
+                id: rezim_button_18
+                text: "/"
+                #font_size: 32
+                background_color: (0.7, 0.7, 0.7, 1)

@@ -1,0 +1,3 @@
+Při bavení se o metrikách - True positive, False positive 
+
+F1 skóre - 2*(TPR*TFR)/(TPR+TFR)

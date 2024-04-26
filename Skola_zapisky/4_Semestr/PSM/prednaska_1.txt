@@ -1,0 +1,70 @@
+Zápočtové úkoly:
+Nezapomenout, Maškov + Babichev tam je taky, to stejné s zkouškou
+Zápočet:
+Dvě domácí úkoly od Černíkové, jeden od Babicheva, seminárka
+Zkouška: 
+could be changed - 3 praktické + 1 teoretische
+
+Základy testování hypotéz:
+Dotanu nějaké stanovené tvrzení - Tento lék je víc gucci, než ten minulý.
+Grafické or číselné. Grafické jsme využili v PASu, teďka číselná
+
+Testujeme vždy 2 hypotézy - nulová a alternativní hypotéza
+Nulová hypotéza -> jen jedna možnost, né víc (střední hodnota výšky mužů je 182 par example, nemohu mít interval), nemůžeme zjistit nulovou hypotézu
+Test nezávislosti -> nezávislost
+
+Alternativní hypotéza -> Dosazujeme to na co chceme přijít 
+test nezávislosti -> závislost
+
+Statistický test může dopadnout jenom booleansky -> Zamítneme or Nezamítneme nulovou hypotézu!!! very importante - žádné synonyma
+
+2x2 matice - skutečně platí h0, skutečně platí h1, nezamítáme h0, zamítáme h0 
+ok, chyba I. druhu alfa, Chyba II. druhu Beta, OK(Síla testu)
+Chyba, že zamítnu nulovou hypotézu (I. druhu), to je ta důležitá chyba, tu se snažím odchytit. Alfa je hladina významnosti (5% klasicky)
+Chyba II. druhu - Beta, tuhle chybu se dá ovlivnit, nýbrž se to tak často nestává. existuje vztah mezi alfa, beta a počtem pozorování,když znám 2, třetí dopočítám
+Síla testu (1-Beta) -> Stává se, "V daný moment použij nejsilnější test
+
+Testy dělají závěry o teoretických statistikách (inference)
+Výběr vhodného testu:
+Existují testové statistiky(T), které se porovnává s kritickou hodnotou(c), c můžou být např. Teoretické kvartily
+Platí že, |T| >= c nebo p-hodnota <= alfa potom zamítáme H0, |T| < nebo p-hodnota alfa potom NEZAMÍTÁME H0
+
+To to je P-hodnota? P hodnota je použití testové statistiky a kritické hodnoty (nějak transformováno), pak to porovnávám s alfou!!
+P-test - probability - pravděpodobnost, že za platnosti h0 nastsal výsledek, jaký nastal, nebo jakýkoliv jiný, který ještě více odpovídá alternativě
+týká se testové statistiky
+
+Testy: 
+Všechny testy mají své vlastní předpoklady, nejklasičteji je to normalita dat, shoda rozptylu, spojité rozdělení, rozdělení je symestrické...
+
+Testy rozdělení: 
+QQ plot, Shapiro-Wilkův test, Andersonův-Darlingův, Kolmogorovův-Smirnovův
+
+Testy o hodnotě parametru:
+nejčastěji testujeme tvrzení o střední hodnotu
+dvouvýběrový t-test, ANOVA, testy o hodnotě korelačního koef., Bartlettův test
+
+Testy nezávislosti:
+chikvadrát-test nezávislosti
+
+Parametrické testy:
+Mám hodnotu parametru, ptám se na to, jestli dává smysl or nor (předpokládá normalitu) (problém outlierů)
+t-test, lineární regrese
+
+Neparametrické testy:
+testy založené na pořadích, odpadá požadavek na normalitu
+
+V materiálech - schéma často používaných testů (kouknout se, naučit se)
+ukazované testy byli Číselná x kategorická proměnná
+
+
+Dvě číselné proměnné - Korelační koeficient - Pearson(normálně) or Spearman(nenormálně) or Kendallův(kategorické uspořádané) korelační koeficient
+
+
+dvě kat. proměnné - Chikvadrát, Fisherův, poměr šancí
+
+Nejjednodusším testem je jednovýběrový t-test o střední hodnotě
+H0 střední hodnota = u0 (mý většinou nějaké číslo), H1 má interval -> menší než u0, rovná se u0, větší než u0 
+If interval, alternativa, if not, h0
+
+Testová statistika jednovýběrového t-testu je
+T = (výběrový průměr - mý /směrodatná odchylka X) * sqrt(počet dat)

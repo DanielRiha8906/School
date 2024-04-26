@@ -1,0 +1,2 @@
+Obecné lineární modely, lin a nelin. regresní modely
+

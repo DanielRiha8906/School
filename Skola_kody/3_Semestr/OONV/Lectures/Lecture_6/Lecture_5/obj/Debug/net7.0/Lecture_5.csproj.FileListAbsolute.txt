@@ -1,0 +1,14 @@
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\bin\Debug\net7.0\Lecture_5.exe
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\bin\Debug\net7.0\Lecture_5.deps.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\bin\Debug\net7.0\Lecture_5.runtimeconfig.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\bin\Debug\net7.0\Lecture_5.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\bin\Debug\net7.0\Lecture_5.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.AssemblyInfo.cs
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\refint\Lecture_5.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\Lecture_5.genruntimeconfig.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\lecture_5\Lecture_5\obj\Debug\net7.0\ref\Lecture_5.dll

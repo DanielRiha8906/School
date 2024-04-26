@@ -1,0 +1,14 @@
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\bin\Debug\net7.0\Cviceni_3.exe
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\bin\Debug\net7.0\Cviceni_3.deps.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\bin\Debug\net7.0\Cviceni_3.runtimeconfig.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\bin\Debug\net7.0\Cviceni_3.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\bin\Debug\net7.0\Cviceni_3.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.AssemblyInfo.cs
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\refint\Cviceni_3.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\Cviceni_3.genruntimeconfig.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV_cviceni_3\Cviceni_3\obj\Debug\net7.0\ref\Cviceni_3.dll

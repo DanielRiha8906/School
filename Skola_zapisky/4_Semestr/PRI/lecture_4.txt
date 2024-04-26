@@ -1,0 +1,108 @@
+Komentáře <!-- -->
+Group 
+substitution
+data types
+shrnutí
+
+jméno jmeného souboru <xss, <xs, <xsd ... 
+
+na IS - cv8, nějaká prezentace o datových typech
+
+speciální komentáře:
+<xsd:annotation> </xsd:annotation> - also komentář vevnitř - <xsd:documentation/> uvnitř buď koment pro lidi, co to čtou, nebo jako dokumentaci
+<xsd:appinfo></xsd:appinfo> - checkspelling = True (informace pro proces, ne pro lidi)
+
+prvek pro zkrácení - vytvořili jsme complextype name = "n" 
+pro každý element musí být typ -> pak už jen píšu type="n"
+
+skupiny elementů a atributů
+elementů 
+<xs:group name="some_name">
+Když si vytvořím tuhle skupinu, tak se potom může jako celá adresovat
+
+<xs:sequence> - elementy, které se budou přesně jednou ve striktně tomhle pořádí vyskytovat
+
+příklad, jak adresuji tu skupinu - <xs:group ref="some_name"> - kde to je, tak se udělá záměna a bude to tam dáno
+
+stejně mohu udělat skupinu pro atribbuty - 
+<xs:attributeGroup name="some_name_again">
+<xs:attribute name = "some_thing"/>
+xs:attribute name = "other_thing"/>
+</xs:attributeGroup> 
+
+zase je mohu referencovat a zkracovat si dokument jako celek <xs:attributeGroup ref="some_name_again/>
+
+záměna elementů 
+
+<xs:element name ="name" type="xs:string/>
+<xs:element name="jméno" substitutionGroup="name"/>
+
+teďka mohu psát buď name nebo jméno
+
+mám kořen xml shcema (<xsd:schema/>)
+pak mám děti -> global
+pak mám další vnoření -> local
+záměna, skupiny musí být dány lokálně -> aka hnedka nahoře 
+
+blokování záměny elementů
+<xs:element name ="name" type="xs:string" block="substitution> - jakákoliv substituce nebude fungovat
+
+Element <any>
+
+Když píšeme xml schema, tak můžeme dát možnost rozšířit jakkoliv to schéma <xs:any minOccurs="0"/> pro elementy
+<xs: anyAttribute/>
+unbounded nebo minOccurs="0" - je mi jedno, kolik jich bude
+
+glabaní atributy - 
+xml souborů může být hodně, kaźdý používá nějaké attributy a jejich globální (společné attributy)
+schemaLocation
+nil.
+
+U atributu - <xs: anyAttribute/> vždycky simple type
+
+datové typy:
+simpleType - build in, restriction
+complexType 
+
+u elementů musím napsat jméno a type 
+<osoba> obsah </osoba> 
+simple type
+když je místo obsahu attribute / dítě -> complex type
+
+<xsd:simpleContent> - když tam není dítě v tagu -> simpleContent (může mít attribute I think, not sure - normálně vynecháváme, takže useless)
+
+Datové typy:
+string, date, numeric, miscellaneous
+
+string : existuje normalizedString, token?
+string - může mít bílé znaky
+normalizedString - pobere tab + řádkování a udělá z nich s mezery
+Token: "vždycky dává zmatek" - znamená to nějaký celek bez mezery - V našem případě po nahrazení bílých znaků dále provádím odstranění několika mezer jednou mezer 
+
+Date: 
+date píšeme ve formátu YYYY-MM-DD
+time - HH:MM:SS:MS pak mohu připojit +-1:00 a tak - prostě GMT, UTC, CST
+vázané na Z
+dateTime - YYYY-MM-DDThh:mm:ss
+duration data type - P numberY number M number D T numher H numher M number S - P4Y5M8DT11H
+
+numeric:
+float
+double
+decimal
+
+byte - 8 signed
+int - 32 signed 
+integer  - neomezené
+long - 64 signed 
+short - 16 signed 
+
+u hodnoty - unsigned 
+
+Miscellaneous:
+boolean -true false, 1 0 
+base64Binary
+hexBinary
+anyURL
+Qname
+NOTATION

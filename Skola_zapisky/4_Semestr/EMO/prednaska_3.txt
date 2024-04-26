@@ -1,0 +1,33 @@
+Evoluční strategie
+Evoluční algoritmus
+Genetický algoritmus
+genetické programování
+
+Evoluční strategie - bojují spolu druhy, které se nemohou spolu množit -> Výherce se zopakuje (real numbers)
+EA - stejné typy zvířat, mohou se množit -> alfa samci + alfa samice (real numbers)
+genetický algoritmus - 1 a 0
+genetické programování - stromy7
+
+Obecné schéma evolučních výpočtu:
+
+Populace - evaluation - if remination criteria (buď ano, konec) nebo -> výběr slekce, množení, mutace tohle do evaluace
+
+
+metody selekce, křížení a mutace:
+P = pravděpodobnost, Fi - fit funkce
+Selekce: Ruleta P(i) = Fi/Sum(Fj) přes j
+Rank - x nejlepších
+Tournament - poberu náhodně dvojce - lepší z nich přežije
+
+
+Křížení: 
+Typicky vybíráme body křížení
+Jedno bodové - 1 0 1 0 1 0 0 0 1 - vyberu si bod křížení, mám dva rodiče, jednu část od jednoho, druhou od druhého a vice versa
+vybírání více bodů
+Hození kostkou
+
+
+Mutace:
+mám nějakou pravděpodobnost na mutaci (třeba 5%), pak se invertuje bit (Genetický algoritmus je nejvíc gucci)
+Buď mám bodovou inverzi, nebo třeba více bitů najednou... ale to se nevyužívá
+

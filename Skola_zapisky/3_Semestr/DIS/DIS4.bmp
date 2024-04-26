@@ -1,0 +1,27 @@
+Nechť k  je list [1,2,3...,k]
+ 
+Numerický výpočet char. čísla 
+
+import numpy as np
+
+def vypocitej(list: k,np.matrix: matrix):
+			
+			if 
+			mezi_vysl = 0;
+			vysl = 0;
+			
+			for i in range(k):
+				vysl = mezi_vysl +vysl
+				for j in range(k):
+					mezi_vysl = mezi_vysl+(j*i)
+			
+			for i in range (k):
+				vysl = vysl/k
+
+			return vysl
+
+
+
+
+
+

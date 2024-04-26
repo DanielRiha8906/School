@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Queens/1.0.0": {
+        "runtime": {
+          "Queens.dll": {}
+        },
+        "resources": {
+          "dje-NE/Queens.resources.dll": {
+            "locale": "dje-NE"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Queens/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,74 @@
+Factory Done
+
+#Fišerova ukázka klonování v C#  -> Mimo téma
+
+
+Otázky ohledně klonování, jaké jsou typy klonování, jestli hluboké, či mělké.
+mělké vytvoří klona co bude pointer na ty samotné členy (když dědím)
+hluboké klonování udělá klona celé té struktury.
+
+var pole = new int[]{10,20,30};
+var clon = pole; (sdílí ten stejný objekt (ukazuje na stejné místo na paměti) - když změním jeden objekt změní se oba)
+var clon = (int[])pole.Clone();
+pole[0] = -1;
+Console.WriteLine(clon[0]); (Už toto hází error. Clone je objekt)(metody nejsou kovariantní)
+output = 10 -- Funguje to, nýbrž to dělá jen mělké klonování
+
+
+var seznam = new List<int>() {10,20,30};
+var clone = seznam.Clone() // nenabízí to Clone, therefore je tam nějaký problém
+
+// poznámka k klonování v  pythonu mám list s -> klonuji ho pomocí s[;] nebo List(s)
+
+var clone = new List<int>(seznam);
+// jen mělká kopie, kdybych měl list seznamů, házelo bymi to jenom pointery na ty seznamy
+
+serializace - převedu objekt do perzistentní podoby. - např hodím string do JSONu a z JSONu ho vyhodím zpátky
+// v Pythonu existuje Pickle (PICKLE RIIIIIIIIIIIICK)
+
+## Comácí Úkol
+Find out what the frick is happening here
+XmlSerializer serializer = new XmlSerializer();
+using (Stream s = newFileStream ("m.xml", FileMode.Create, FileAccess.Write)){
+    serializer.Serialize(s, seznam);
+}
+
+BinaryFormatter f = new Binary Formatter();
+using (Stream s = new FileStream(s"bin", Filemode.Create, FileAccess.Write))
+{
+    f.Serialize(s,seznam);
+};
+using (Stream s = new FileStream("s.bin", Filemode.Open, FileAccess.Read))
+{   
+    List<int> clon_serial = f.Deserialize(s);
+    foreach (var item in clon_serial)
+    {
+        Console.WrieLine(item);
+    }
+};
+// klonování přes metodu, možná je lepší použít Memory Stream
+
+
+
+// nový pokus using memory Stream
+
+BinaryFormatter f = new BinaryFormatter();
+using (Stream s = new MemoryStream())
+{
+    f.Serialize(s,seznam)
+    IRichText clon_text = (IRichText)f.Deserialize(s);
+}
+
+
+// používá tu factory na tu serializaci, nýbrž chci mít clean code
+
+IRichText text2 = factory.Create(Device.CONSOLE);
+text2.AddTitle("Test");
+BinaryFormatter f2 = new BinaryFormatter();
+using(stream s = new MemoryStream()){
+    f.Serialize(s,text);
+    s.Flush();
+    IRichText clon_text = (IRichText)f.Deserialize(s);
+    clon_text.Show()
+}
+// Outut - Unhandled exception -> is not marked as serializable ( mohu hodit [Serializable] před Html)

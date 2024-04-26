@@ -1,0 +1,39 @@
+CREATE FUCTION Cena_obj (cislo_obj INT) RETURNS NUMERIC (8,2)
+AS $$
+DECLARE suma NUMERIC (8,2);
+
+SELECT SUM(v.cena * ov.kusy) INTO sum
+FROM obj_vys as ov JOIN vyrobky as v ON ov.id_vyr = v.id_vyr
+WHERE ov.cislo = cislo_obj;
+xxxxxxxxxxxxxxxxx
+RETURN sum;
+$$;
+
+
+CREATE PROCEDURE Faktura(cislo_obj INT, dph INT)
+AS $$	
+DECLARE pocet SMALLINT;
+	cena_s_dph NUMERIC (8,2);
+SELECT cislo as "Číslo objednávky";
+SELECT "Pizzerie Ujep, Klíšská 25, 40096 Ústí nad Labem, IČ 12345678, DIČ CZ12345678" as "Dodavatel";
+
+SELECT COUNT(af.cislo) INTO pocet FROM adresy_faktur as af WHERE af.cislo = cislo_obj;
+
+IF pocet>0 THEN 
+	SELECT CONCAT(af.nazev_firmy, ", ", af.adresa_fakt, ", ", ", IČ:", af.ico, ", DIČ:", af.dic) as Adresát
+	FROM adresy_faktur AS af
+	WHERE af.cislo = cislo_obj; 
+ELSE
+	SELECT CONCAT(z.jmeno, " ", z.prijmeni, ", ", z.adresa, ", ", m.nazev) as Adresát
+	FROM objednavky as o 
+	JOIN zakaznici as z ON o.id_zak = z.id_zak
+	JOIN mesta as m ON z.id_mes = m.id_mes
+	WHERE o.cislo = cislo_obj;
+END IF;
+
+SELECT CURRENT_DATE as "Datum vystavení", CURRENT_DATE + INTERVAL "14 days" as "Datum splatnosti"
+cena_s_dph := Cena_obj(cislo_obj);
+SELECT cena_s_dph as "Cena celkem s DPH", cena_s_dph / (100+dph) * dph as "DPH",
+	cena_s_dph / (100+dph) * 100 as "Cena bez DPH";
+/* doladit alko nápoje */
+$$;

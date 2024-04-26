@@ -1,0 +1,57 @@
+https://vtan.ujep.cz/IS 
+IS KI - username + passwd
+
+Well formed -> pravidla syntaxe samotného filu viz cviko.1
+validní -> odpovídá a projde specifikaci (dtd, xml-schéma)
+SOAP 
+Simple object aplication protocol
+V případě vytváření webové služby, používáme tento protokol, nebo distribuované sítě
+JSON -> Java script object notation
+xHTML -> x ukazuje, že to je značkovací jazyk
+https://codebeautify.org/xmlviewer
+
+struktura xml souboru - deklarace
+utf - unicode transformation format - 16bitů 
+<?xml version='1.0' encoding='UTF-8' standalone='no' ?>
+	 pseudo atribut - version, encoding a standalone je jiný tím, že to musí být v tomhle orderu, zatímco klasický atributy v xml je whatevs
+	 version - dlouhý rant, ale prostě se využívá verze 1.0, encoding většinu času to bude either ascii or UTF-8 a pak standalone jestli to je solo soubor or no
+	jediné, co je povinné, je ta verze, zbytek je optional
+xml má elementy a atributy
+Prologue - prvních pár řádků v prologu píšeme instrukce pro zpracovaní xml souborů
+klasicky v komentářích <!-- text -->, deklarace elementů <!DOCTYPE 
+za prologem mám hlavní element - má být jeden element, který obsahuje celý ten file. 
+Element x atribut - vznikly jen doporučení - informace v elementu, meta-informace v atributu 
+XML musí mít unikátní jména elementů - UID_klasicky_pojmenovany_tag - 
+na ten unikátní identifikátor by měl být URL - https://somefuckingwebiste.cz:Rodina par examples
+využiji zkratku pro to URL - a:rodina 
+
+: se využívá k jmenným prostorům.
+jmenný prostor 
+
+Validátory: 
+DTD a XML schéma - popisují strukturu, kterou by mělo XML soubor dodržovat, posléze dobré validátory dokážou checknout DTD oproti XML a říct mi, kde se stala chyba
+
+Entita  = soucno, něco co existuje, má tělo a má odkaz
+parser najde odkaz na tělo entity
+
+v xml existují ještě dva atributy - space a lang, space definuje white spaces - space default, preserve - zachovat or no. lang - en, cz
+
+DTD
+system - ukazuje cestu k souboru 
+<!DOCTYPE dopis [
+<!ELEMENT dopis (#PCDATA)>
+]>
+PCDATA - text 
+CDATA - vypnutá validace - prostě character 
+IDREF - ID které referencuje něco jiného v dokumentu
+entity - odkaz na jméno
+NMTOKEN - hodnota
+
+Deklarace attributů <!ATTLIST
+
+všechny XML dokumenty jsou vytvořené z Elementy, atributy, entity, pcdata, cdata
+při deklaraci - Empty, any - Empty nesmí tam být cokoliv. Any - vypínám validaci, může tam být cokoliv
+Images - přidávat do atributů cestu k obrázku - <img src="orloj.jpg>
+Element s potomky <!ELEMENT rodic (potomek)>
+Zápis potomků vypadá více způsobů (potomek*), (potomek+), (potomek?) 
+',' sekvence, '|' selekce (or), '?' iterace 0 or 1, '+' 1 a více, '*' 0 a více 

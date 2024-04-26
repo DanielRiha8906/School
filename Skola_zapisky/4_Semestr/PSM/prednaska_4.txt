@@ -1,0 +1,57 @@
+Základy mnohorozměnré statitsitky. 
+Předpokládáme, že nemáme jednu proměnnou, ale vektor proměnných X = (x1,x2,x3...,xk) Transponovaný
+pak máme vektor středních hodnot mý 
+variační matice - na hlavní diagonále máme rozptyl, zbytek máme kovariance 
+
+máme nějaký výběr X a Y
+když porovnáváme střední hodnoty - pro každý spočítám 
+mám vektor průměru X a Y
+Jak z tohohle měřit vzdálenost?
+mám euklidovskou vzdálenost (x1-y1, pak kvadrát + x2-y2 kvadrát ....)
+Jelikož všechny složky můžou být úplně jinak velké - plat + výška, takže pak by ta výškan ešla vůbec vidět
+
+
+Mahalanobisova vzdálenost 
+stejná myšlenka jako euklid, ale dělí se to variabilitou 
+
+zobecnění základních statisitckých metod -> dvouvýběrový test -> hotellingův test
+analýza rotpzylu (Anova) => Manova
+korelační koeficient => kanonické korelace
+Lineární regerese => mnohorozměrná lineární regrese, kde závisle proměnná má více složek 
+
+
+Hotellingův test 
+Porovnávání střední hodnotu náhodného vektoru ve dvou populacích 
+
+
+MANOVA 
+při srovnání více nezávislých výbérů se opět testují hypotézy
+H0: vektory středních hodnot se rovnají
+H1: ne
+
+W within varability vně výběru
+B between variability mezi výběry
+
+testové statistiky pro MANOVu
+Všechny porovnávají celkovou statistiku
+Wilkova lambda = determinant (W/W+B)
+Pillayova stopa = trace (B/W+B)
+Hotellingova Lambda = trace (B/W)
+
+MANOVA pro porovnání dvou výběru, taky funguje
+
+Metoda hlavních komponent (PCA)
+
+Long story short -> Když je tam strašně moc proměnných, tak tam jsou korelované proměnné, nebo skoro identické informace.
+Přetransformuje ze všech těch proměnných na míň proměnných. Prostě abych měl s menším počtem so fungovat
+
+PCA vezme matici,P = X^T *y
+
+Výsledá matice lhavních komponent Y = má následující vlastnosti
+Její vektory jsou vzájemně kolmé (nezávislé)
+součet koedicientů lineárních transofrmací u každé komponenty je 1
+řadí se podle variability (od největší po nejmenší)
+obsahuje veškerou informaci, která obsahovala původní data
+
+Faktorová analýza 
+Poberu těch x hlavních komponent

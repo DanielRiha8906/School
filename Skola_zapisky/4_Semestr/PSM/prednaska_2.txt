@@ -1,0 +1,77 @@
+Jednovýběrový t-test 
+
+interval spolehlivosti
+
+P(mý náleží IS) = 1-alfa
+alfa je hladina významnosti - klasický 0,05
+
+T =  ((x - mý)/ sd(x)) * sqrt(n) za platnosti h0 = tn-1
+
+P(|T| <= tn-1(1-(alfa/2))) = 1-alfa
+jak to funguje? no clue it just works
+x = absolutní průměr
+(|x - mý|/ sd(x)) * sqrt(n) <= tn-1 (1-alfa/2)
+|x-mý| <= tn-1(1-alfa/)*sd(x)*1/sqrt(n)
+
+x-mý <= tn-1(1-alfa/2)*sd(x)*1/sqrt(n)
+mý-x <= tn-1(1-alfa/2)*sd(x)*1/sqrt(n)
+
+mý >= X - tn(1-alfa/2)*sd(x)*1/sqrt(n)
+mý <= X - tn(1-alfa/2)*sd(x)*1/sqrt(n)
+Kdokoliv tohle Čte: zapisování matematických rovnic do čistého texťáku není fun :)
+
+Jednovýběrové testy nejsou tak klasické, většinou třeba jenom opakování historických měření
+
+Dvouvýběrové testy - více časté -> porovnávám dva nezávislé výběry 
+zobecnění jednovýběrové varianty -> komplikuje semi to tím, že mám dvě možnosti:
+Dvouvýběrový t-test pro shodné roptyly
+Welchův dvouvýběrový test pro různé rozptyly
+
+Testované hypotézy obou testů jsou : 
+H0 - střední hodnota x - střední hodnota Y = 0
+H0 - střední hodnota x - střední hotnota Y !=0, < or > než 0 
+
+
+Jaký t-test mám vybrat, na to potŘebuji shodu rozptylů -> Buď udělám Boxplot, ale okometrická metoda není úplně gucci -> F-test
+F = Var(x)/Var(y) - Fn1-1,n2-1
+n1 je rozsah výběru x, n2 Y
+H0: rozptyly se ve výběrech neliší
+h1: rozptyly se liší
+P <= alfa => Zamítám H0, platí H1
+P > alfa => Nezámítám H1
+
+Wilcoxonův dvouvýběrový test pro porovnání dvou nezávislých výběrů, které nesplňují normalitu
+H0: stŘední hodnota X - střední hodnota Y =  0
+H1: stŘední hodnota X - střední hodnota Y != 0, < or > 0
+
+Test je založen an pořadích hodnot sdruženého výběru. Postup: 
+oba výběry smíchám dohromady, uspořádám dle velikosti, všechny pošlu zpátky, průměr se spočítá z pozic. Když to vyjde hodně jinak -> výsledek
+
+
+Porovnáváme-li více než dva nezávislé výběry, používá se analýza rozptylu. 
+Testuji:
+H0: všechny střední hodnoty jsou stejné
+H1: alespoň jedna stŕední hodnota se liší
+
+
+Myšlenka psočívá v porovnání variability mezi výběry s variabilitou v rámci výběrů 
+v rámci výběru je variabilita velká
+variabilita mezi výběry je malá 
+
+
+
+Anova/Welchova - normálně rozdělená data vs ne 
+
+
+
+analýza rozptylu - Anova 
+Mám Xij, i-té pozorování z j-tého výběru, Xi - průměr i-tého výběru X - celkový průměr 
+
+SSA variabilita mezi výběry
+SSe variabilita v rámci výběru
+SST = SSA + SSe 
+Tabulka analýzy rozptylu  
+X(součty čtverců, stupně dolnosti, průměrné čtverce,  testová statistika, p-hodnota)
+Y (Faktor A, Chyba e, celkem)
+
+Barlettův test -  kontroluje shodu rozptylů

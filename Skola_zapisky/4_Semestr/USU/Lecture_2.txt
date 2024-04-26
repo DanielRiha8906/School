@@ -1,0 +1,55 @@
+	Data - X
+jednotlivé řádky jsou vectory - x
+k datům mohu mít label - y - klasifikace zdali patří do nějaké třídy, či nikoliv (regrese -> hodnota) 
+Tohle všechno je učení s učitele -> když mám label, tak si to něco odvodí
+
+Shlukování -> Mám body v prodstoru, patří tyto body do nějaké skupiny?(shluku)
+K-means -> k je hyperparametr algoritmu (kolik tam je těch těžišť, aka počet shluků)
+předpokládám, že ho znám
+vyzvořím si někam náhodně k centroidů
+náhodně si vyberu xi 
+1) udělám vzdálenost od všech těžišt
+||xi-Cj||2 (dolní index) -> pythágoras
+určím, které z těch těžišt je mu nejblíže -> argmin ||xi-Cj||2 přiřazuji body k těžišti
+
+pro všechny xi tohle provedu
+
+2) přepočet těžiště - vypočítám si aritmetický průměr všech xi, které přísluší těžišti
+j je množina všech těžišť
+sj je množina bodů příslušící jedno j 
+#SJ je počet bodů v sj
+
+Cj(new) = 1/#SJ Suma(xi)
+
+3) iteruji, dokuď ||Cj(new) - Cj|| > tolerance
+
+
+Nová přednáška -> tohle je z 1.
+
+Klasifikace
+
+algoritmus K-NN (K-Nearest Neighbors)
+
+Spočítá se vzdálenost se všemi body
+pak se vybere hyperparametr K - což je počet nejbližších sousedů
+Mám trénovací data, reálné data a měření, kolik těch K chci
+
+
+
+Lineární regrese
+min ||y=Xw||2
+kde w je váha 
+Yhead = sign(xw)
+
+logistická regrese:
+
+sigmoida 
+S(t) = 1/1+e^(-w*x+b)
+
+předpokládám, že mám body = Wt*x+b=0 - řeknu si, že je tam něco jako "pravděpodobnost" =0 - 50%
+Wt*x+b=10 -> 60%
+Wt*x+b= -10 -> 40%
+
+label nemohu mít -1 1, ale musí to být 0-1 -> beru to dle té pravděpodobnosti
+
+budu minimalizovat ||y-yhead(x)||

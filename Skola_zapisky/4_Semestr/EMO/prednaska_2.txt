@@ -1,0 +1,11 @@
+Opakování - viz 1. přednáška
+
+Hillclimb algorithm
+
+a' = Omut (a) 
+kde Omut je nějaká funckce
+kde jednotlivé komponenty ai' jsou určené tak,že
+a' se buď stane 1-a' pro random<Pmut
+ai -> jinak
+binárně se mi prohodí když ten pmut 
+A* je ideální potom - a* = argmin f(ró(a'))

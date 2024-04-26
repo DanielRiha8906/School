@@ -1,0 +1,9 @@
+fáze implementace
+ukázka jest ideální svět:
+sfotwarový inženýr - cápek co dělá big picture kontextové diagramy
+tech lead,
+softwarový architekt - UML diagramy
+NávrháŘ komponent - Senior programátor most of the time - class diagramy
+UI designer
+UX designer - user experience
+IX designer -interaction 	

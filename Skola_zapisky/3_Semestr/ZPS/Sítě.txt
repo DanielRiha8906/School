@@ -1,0 +1,135 @@
+Rozdíl mezi TCP a ISO/OSI
+ISO/OSI - Fyzická, Linková, Síťová, Transportní, Relační, Prezenční, Aplikační - teoretický model, který se nepoužívá
+1. vrstva Fyzická  - kabely.
+2. vrstva Linková - rámce (spojení mezi sousednímy systémy) - MAC ADRESY 
+3. vrstva Síťová - Směrování v síti a síťové adresování  - IP ADRESY 
+4. vrstva Transportní - port 
+5. vrstva Relační - Session mezi účastníky
+6. vrstva Prezenční - Formátování a prezentování dat
+7. vrstva aplikační - TCP spojení 
+
+TCP - 
+Vrstva síťového rozhraní - Fyzická + Linková - kabely + mac adresy
+Síťová vrstva - Síťová - IP adresy 
+Transportní - transportní - Porty 
+Aplikační - Relační, prezenční, aplikační - session mezi účastníky, formátování prezentování dat, TCP 
+Reálný model
+Rozdíly - míň vrstev, TCP/IP 
+_________________________________________________________________________
+RIP - 
+Směrovací protokol pro určení nejkratší cesty v síti, metrikou je počet skoků (hop count) 
+_________________________________________________________________________
+Protokoly (3 až 5)
+HTTPS - 443 - šifrovaný HTTP - Hypertext transfer protocol secured  
+DNS - Domain Name system  - překlad IP adres na doménové jména 
+FTP - 20,21 (Přenos souborů - File Transfer Protocol)
+TELNET - 23 - Vzdálený textový terminál (nešifrovaný) 
+SSH - 22 - Secure Shell 
+POP3, IMAP - 110, 143 - Stahování elektrické pošty, vzdálená správa elektronické pošty 
+
+
+_________________________________________________________________________
+IP adresy - výpočet
+_________________________________________________________________________
+Manchester kod - výpočet 
+
+Mám clock a data stream.
+z vysoké na nízkou - 1 
+z nízké na vysokou - 0
+_________________________________________________________________________
+Hlavička ethernetovýho rámce/ packetu 
+Hlavička ethernetového packetu - Preambule 7 - Oddělovač začátku rámce 1 - Mac cíle 6 - Mac Zdroje 6 - 802.1 tag 4 - délka/typ 2 - Datové pole 46-1500 - kontrolní posloupnost rámce 4 - Mezera mezi packety 12
+čísla - oktety 
+
+Rámec - 64-1522 oktetů 
+Packet - 72-1530 oktetů 
+_________________________________________________________________________
+TCP/IP komunikace
+
+_________________________________________________________________________
+Člěnení sítí dle činnosti/ topologie
+Topologie sítě:
+Line, Ring, Bus, Tree, Star, mesh, Full mesh 
+dle činnosti:
+
+dle rozlehlosti:
+PAN, LAN, MAN, WAN, GAN
+personal, local, metropolitan, wide, global 
+_________________________________________________________________________
+Definice virtuálních sítí
+Počítače propojené pomocí internetu mohou fungovat, jako kdyby připojeny do jedné lokální sítě
+zobecněná VPN je síťové tunelování 
+_________________________________________________________________________
+Bezpečnost: VPN a podobné termíny
+VPN, FIREWALL, KERBEROS, 
+_________________________________________________________________________
+Typy kabelů: koaxilání, optika, metalické atd... 
+
+Důležité termíny:
+Bandiwth - teoretická propustnost
+Goodput - praktická propustnost 
+propustnost - metadata??
+
+Koaxiální - dneska se nepoužívají na personální sítě používali se v busové topologii. Stanice měli u sebe T separátory a na konci Terminátory
+Tenký a tlustý  
+metalické -
+4 páry kroucená dvojlinka - Norma T568A, T568B. Pro Čechy T568B
+konektor RJ45 
+Cat5E - 100mb/s
+Cat6 - 1Gb/s 
+Cat6a - 10Gb/s
+Cat7 pouze v data centrech - 10Gb/s 
+
+
+Optické kabely - 
+Velmi tenké - více vláken 
+NEOHÝBAT
+Optické paprsky nikdy rovně - Amplituda, frekvence combi 
+_________________________________________________________________________
+Velikost, délka tří adresace síťové adresace (bit)
+
+_________________________________________________________________________
+Dynamické a statické routing: linkstate, distance vektor, matice 2x2
+
+_________________________________________________________________________
+Aktivní síťové prvky: přiřadit k vrstvám - L1 - HUB atd... 
+
+Hub - 1. vrstva 
+Repeater - 1. vrstva 
+Bridge - 2. vrstva 
+Router - 3. vrstva 
+Switch - 2. vrstva, ale existujou i L3 switche 
+
+
+_________________________________________________________________________
+Pasivní prvky: Jaká norma pro RJ45 - Norma:568B
+Kabeláž a konektory 
+Metalické, optické, koaxiální kabely 
+Konektory, přenesové média (CD, USB), Spojky, Zásuvky 
+
+RJ45 - UTP/STP 8 vodičů 8 pozic 
+568B Striped - malé, celobarvné velké písmeno
+orange Orange green Blue blue Green brown Brown  
+
+_________________________________________
+Definujte 3 DNS záznamy: MX, TXT, SOA
+MX - záznam určuje na jaké poštovní server je směrovaná pošta zaslaná na doménu 
+TXT - Lze do nich zadat libovolný textový řetězec 
+SOA - SOA (Start Of Authority record) je speciální záznam, který se musí v každém zónovém souboru vyskytovat právě jednou. Jedná se o jakousi hlavičku, která obsahuje následující informace:
+MNAME, RNAME, SERIAL, REFRESH, RETRY, EXPIRE, MINIMUM 
+_________________________________________________________________________
+Přístupové metody: tokeny, CSMA, determitiscké, schochastické
+
+_________________________________________________________________________
+Rozdím mezi TCP a UDP: vtip by nám nemusel dojít
+
+_________________________________________________________________________
+VLSM a CIDR: VLSM - maska sítě, CIDR - směrování
+
+_________________________________________________________________________
+Simplex, Unicast, Broadcast atd... - Přístupové metody
+
+_________________________________________________________________________
+MAC adresa v 16 soustavě (Děda vzal bábu na abbu) hexadecimílních znaků: 6 dvojic,
+
+_________________________________________________________________________

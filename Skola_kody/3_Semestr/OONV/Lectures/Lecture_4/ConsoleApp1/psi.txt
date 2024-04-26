@@ -1,0 +1,29 @@
+class pes{
+    public string Name {get; private set;}
+    public double Vahy {get; private set;}
+
+    public Pes(string name, double vahy)
+    {
+        Name = name;
+        Vahy = vahy;
+    }
+    public static IEnumerable<Pes> GeneratorPsu()
+    {
+        Random g = new Random();
+        var souhlasky = new string("qwrtzpsdfghjklxcvbm");
+        var samohlasky = new string("aeiouy");
+        var slabiky = (from souhlaska in souhlasky 
+                        from samohlasky in samohlasky
+                        select souhlasky.ToString() + samohlaska.ToString()).ToList();
+
+        while (true)
+        {   
+
+            double v = g.NextDouble() * 0.5 + 20.0;
+            string name = slabiky[g.Next()]
+            yield return new Pes(n,v);
+        }
+
+    }
+
+}

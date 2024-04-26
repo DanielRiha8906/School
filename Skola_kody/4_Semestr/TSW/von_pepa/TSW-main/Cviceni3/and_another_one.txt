@@ -1,0 +1,25 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome()
+driver.get("http://127.0.0.1:5000/nova_pica")
+
+nazev_pizzy = "Hipopotomonstroseskvipedaliofobie"
+cena_pizzy = "10000"
+driver.find_element(By.NAME, "nazev").clear()
+driver.find_element(By.NAME, "nazev").send_keys(nazev_pizzy)
+
+
+driver.find_element(By.NAME, "cena").clear()
+driver.find_element(By.NAME, "cena").send_keys(cena_pizzy)
+
+driver.find_element(By.TAG_NAME, "button").click()
+
+
+driver.get("http://127.0.0.1:5000/picy")
+
+posledni_pizza = driver.find_element(By.XPATH, "//ol/li[last()]").text
+print(posledni_pizza)
+driver.close()
+#Daníkova Hříbova pizza-Home page

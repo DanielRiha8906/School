@@ -1,0 +1,17 @@
+C:\Users\kuber\source\repos\queensapp\queensapp\bin\Debug\net8.0-windows\queensapp.exe
+C:\Users\kuber\source\repos\queensapp\queensapp\bin\Debug\net8.0-windows\queensapp.deps.json
+C:\Users\kuber\source\repos\queensapp\queensapp\bin\Debug\net8.0-windows\queensapp.runtimeconfig.json
+C:\Users\kuber\source\repos\queensapp\queensapp\bin\Debug\net8.0-windows\queensapp.dll
+C:\Users\kuber\source\repos\queensapp\queensapp\bin\Debug\net8.0-windows\queensapp.pdb
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.Form1.resources
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.csproj.GenerateResource.cache
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.AssemblyInfoInputs.cache
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.AssemblyInfo.cs
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.csproj.CoreCompileInputs.cache
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.dll
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\refint\queensapp.dll
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.pdb
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.genruntimeconfig.cache
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\ref\queensapp.dll
+C:\Users\kuber\source\repos\queensapp\queensapp\obj\Debug\net8.0-windows\queensapp.Properties.Resources.resources

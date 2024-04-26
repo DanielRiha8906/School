@@ -1,0 +1,14 @@
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.AssemblyInfo.cs
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\bin\Debug\net7.0\OONV cvika 2.exe
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\bin\Debug\net7.0\OONV cvika 2.deps.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\bin\Debug\net7.0\OONV cvika 2.runtimeconfig.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\bin\Debug\net7.0\OONV cvika 2.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\bin\Debug\net7.0\OONV cvika 2.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\refint\OONV cvika 2.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\OONV cvika 2.genruntimeconfig.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\OONV cvika 2\obj\Debug\net7.0\ref\OONV cvika 2.dll

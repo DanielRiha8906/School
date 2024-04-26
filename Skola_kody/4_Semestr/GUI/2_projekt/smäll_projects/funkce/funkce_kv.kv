@@ -1,0 +1,17 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    TextInput:
+        id: vstup
+        text: 'nic'
+        font_size: 64
+        readonly: True
+        halign: "center" #left, center, right
+
+
+    Button:
+        text: 'ok'
+        on_press: app.root.ids.vstup.font_size = 32
+        #app referuje na instanci aplikace
+        #root referu na kořen widgetu aplikace
+        #ids je slovník všech widgetu v kv souboru

@@ -1,0 +1,27 @@
+Módy /režimy šifer
+Pro utajení
+ECB
+CBC
+CFB
+OFB
+CTR!!!!
+
+pro autentizaci 
+MAC 
+CMAC
+OMAC
+GMAC
+XCBC 
+
+kombinované 
+CCM
+GCM
+
+ECB - Electronic code book
+slovo, vezmu knihu abych zjistil čím ho mám nahradit
+
+Tady to funguje tak, že mám blok, přetransofrmuji, pošlu Tblok jako output
+zastaralá -> Nepoužívá se dnes 
+
+CBC Cipher block chaining:
+Nejpouzívanější quote unquote

@@ -1,0 +1,13 @@
+{%extends "template.html"%}
+
+{%block hlavni%}
+<h2>Les Pizzas oui oui</h2>
+<ol>
+    {%for pica in les_pizzas%}
+    <li>
+       Nom: {{pica["název"]}} </br>
+        prix: {{pica["cena"]}}
+    </li>
+    {% endfor %}
+</ol>
+{%endblock%}

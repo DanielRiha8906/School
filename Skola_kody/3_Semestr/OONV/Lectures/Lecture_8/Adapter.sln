@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{A75DFE69-33BB-4501-A6C3-19B77E4CD556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Bridge\Bridge.csproj", "{16B906CF-48CC-44CC-8B23-24F094F22E4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A75DFE69-33BB-4501-A6C3-19B77E4CD556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75DFE69-33BB-4501-A6C3-19B77E4CD556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75DFE69-33BB-4501-A6C3-19B77E4CD556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75DFE69-33BB-4501-A6C3-19B77E4CD556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16B906CF-48CC-44CC-8B23-24F094F22E4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B906CF-48CC-44CC-8B23-24F094F22E4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B906CF-48CC-44CC-8B23-24F094F22E4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B906CF-48CC-44CC-8B23-24F094F22E4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

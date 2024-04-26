@@ -1,0 +1,48 @@
+Čas - doplnit prvních 13 minut 
+
+Intervaly mezi dvěma sousedními měřeními - Stejné časové intervaly
+situace, kde jsou časové rozestupy různé, nebudeme s nimi pracovat
+
+při sběr udat je potřeba ohlídat moňzé problémy:
+vybrat správné časové body, kdy se bude měřit
+problém s měsíceme -> každý měsíc různé počty dní, svátky, pracovní dny/víkendy
+-> standartizovat aby byli srovnatelné
+
+Délka časové Řadxy - Musí být dostatečné dlouhá řada, aby šel vidět trend, ale ne dlouho, protože stará data mi to mohou vyhodit -> počet telefonů v 1800
+
+Mettody analýzy časových řad:
+Indexace - docent Sixta (o tom se bude sám on bavit, až někdy přijde)
+Dekompozice (černíková + doc. Vozár): hledání trendu, sezónnost, cykličnosti 
+Box-Jenkinsova metodologie: Řada nemá žádný dlouhodobý trend, v tomhle hledám náhodnou složky - zásivlost na minulých datech
+Spektrální analýza: Každou řadu si představím jako sumu sinusoid, zabývat se tím nebude. 
+R/S analýza a Hurstův exponent (Doktoř Škvoř) - no clue, co to je apparently
+
+
+Dekompozice časových řad:
+
+Předpokládáme, že časová řada se řídí jedním z dvou modelů
+Adifitvní model 
+Yt=Trt+Ct+St+Etat
+Multiplikativní model:
+Yt = Trt*Ct*St*Etat
+
+Časová řada = Yt
+Dloudobý(časový) trend = Trt
+cyklická složka = Ct
+Sezónní složka = St
+Náhodná složky = Etat
+
+Časový trend:
+Klasické funkce, které nám ukazují růst:
+Konstantní trend - Trt = B0
+Lineární trend - Trt = B0+B1*t
+Kvadratický trend - Trt = B0+B1*t + B2t^2
+Exponenciální trend - Trt = a*B^t
+
+Logistický trend
+Gompertzova křivka 
+
+
+Infpormační kritéria hodnotící model: 
+Akaikeho informační kritérum (AIC)
+AIC = 2k - 2ln(L) - kde L je likelihood, k je počet parametrů použitý v modelu k

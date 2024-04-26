@@ -1,0 +1,74 @@
+6. Přednáška ZPS - 9.11.2023
+Model TCP/IP
+Model, na kterém jsou postavený dnešní sítě/internet.
+
+TCP -> informace o tom, že data dorazily.
+
+4. vrsty
+protocol stack
+Síť jest naprosto nespolehlivá -> žádné zajištění posílání informací
+
+množství protokolů -> protocol suit
+pod záštitou USA armády
+
+1-2,3,4,5-7
+spojení dle adresaci :)
+
+MAC, IP, Port, Data
+
+Spodní vrstva -> Ethernet, Token Ring.... Síťová vrstva 
+druhá vrstva -> IP, ARP, RARP  -> Internetová vrstva
+třetí vrstva -> TCP -> Transportní vrstva
+Čtvrtá -> FTP, TFTP, HTTP, HTTPS -> Aplikační vrstva
+Znát Porty + protokoly lovely 
+HTTPS - 443
+HTTP - 80
+FTP - 20/21
+SSH - 22
+TELNET - 23
+POP3 - Příjem emailů, do lokální db 
+SMTP - Simple mail transfer protocol
+IMAP - Zrcadlení schránky od okna -> neomezená schránka - má smysl, jinak ne.
+EDP - 3389 vzdálená windows služba
+RIP - routovací protokol - učení se routovacích tabulek
+
+Media posílání dat: Metalika, Optika, bezdrát
+
+Bt + Wifi -> 2.4, 6GHz, 
+mobily -> 2G, 4G, 5G - 2G funguje kvůli zpětné kompatibilitě
+5G - 26GHz -> menší dosah  problém třeba se zdma
+
+ WLAN, TOKENRING, Point to Point, Ethernet 
+ PPP - CHAP - Challenge Authentication protocol
+ protokoly PPP 
+ LCP, NCP, IP-datagram, IPv6 - c021,8021,0021,0057
+ 
+ (data, segment, packet, rámec)
+Internetová vrstva - 2. vrstva
+TCP -6 - Time control protocol 
+UDP - 17 -  ____ delivery protocol - unchecked? necheckuji zdali došlo -> video streaming
+
+
+doručení paketu
+Směrování 
+Statické x Dynamické 
+Dynamické - RIP, OSPF, BGP, EIGRP
+
+Transportní vrstva
+Cíle - Přenášet data, bez ohledu. Pokuď v pořadí, tak v pořadí, detekovat chyby pomocí controlních součtů.
+
+PORTY 1 - 65535 
+segmentace (reassembling) -> Videa, Torrenty - Je nutnost to rozsekat na kousky, a pak to složit dohromady
+Multiplexing -> Do jednoho datového kanálu dávání více informací najednou. Řadí se tak, jak potřebuji. Prioritizace sluźby, dle potřeby -> Aby došel zvuk + obraz QOS - Quality of Services
+
+TCP - rozšiřuje hlavičku o 20 bytů - Aby dokázala checknout, zdali jsou data doručený
+Handshake "Tree-way" -> poslat Synchronizaci, přijde synchronizace, pošle zpátky acknowledge, on řekne ok cock, spojení sestaveno 
+
+UPD 
+Nespolehlivý, rychlý
+Protokoly apl. vrstvy
+- DNS, video, Torrent, DHCP, NTP, TFTP, SIp, RIP, Radius(ověřování uživatelů na EDU par example)...
+NAT - překlad IP adres mezi local a veřejnou 
+
+Aplikační vrstva 
+DHCP

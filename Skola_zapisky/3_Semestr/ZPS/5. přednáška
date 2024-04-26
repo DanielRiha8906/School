@@ -1,0 +1,97 @@
+L1: Síťová karta, switch, bridge
+L2: kontrolní informace
+Kdo, s kým, kdy, chyby?, kdo sleduje komunikaci?
+zapouzdření rámoce - header, dat(packet), trailer ( L2, mac adresy)
+subvrstvy - dvě podvrstvy - medium x logická kontrola 
+organizace - ISO, IEEE(nejdůležitější, podkategorie, 802.x),( ITU, ANSI - nedůležité pro naší lokalitu )
+metody přístupu k médiu
+Deterministický - pešek (token)
+Nedeterministický - Collision Detection (802.3) -(historic, dnes již ne) Když se mi packety kolidují, pošlu JAM signál, pak všici přestanou vysílat, pak na random začnou komunikovat
+Collision Avoidance (802.11) - Zařízení dává čas, kdy smí vysílat --> nemělo by dojít k kolizi
+
+Síťové topologie  ring, mesh, star, tree, line, bus, fullmesh
+
+Detail MAC adresy
+3. první oktety jsou dány výrobcem (dá se to spoofnout)
+poslední 3. oktety jsou dány pro NIC Network interface controller
+
+IEEE 802.3 
+HEADER --> Preambule(8bytes), Cílová MAC(48bitů, 6bytů), zdrojová MAC, typ (2bytes) Data 46-1500bytes, frame check sequence (4bytes)
+MTU - dá se změnit počet bytů dat 
+
+802.11
+cílová a zdrojová MAC, kontrolní součet,
+ data se mohou fragmentovat, může se stát, že fragmentovaná data nebudou chodit po sobě, therefore - > je tam sequence number, aby se poznalo jak to má být
+
+PPP - point to point protokol
+Flagm adresam control, protocol, Data ? , FCS
+Není tam Mac to mac cíle -> therefore budu mít o 12 bytů víc. 
+
+802.11 služby - povrzování doručení, autentikace, asociace, kryptování ( když každá strana  používá jiný shit, tak se nedomluví)
+{}{}{}{}{}{}{}{}{}{}{}{}{}{}}{}{}{}{}{}{}{}{}{}{}{}}{}{}{}{}{}{}{}{}{{}{}{}{}{}{}{}{}{}{}
+3. vrstva - Jak ty packety doručovat mezi sítěmi - potřebuji nějaký index point... oh wait IPv4??!!
+Adresování - IPv4(32bytů, desítková, odděleno tečkou :O, ), IPv 6 (128 bytů, hexadecimál)
+Encapsulace a De-encapsulace 
+Něco dostanu -> musím do dekapsulovat, něco chci poslat -> zabalím to. Jak dopisy
+Směrování, Routování: úkol: přečíst si hlavičku, kam to jde, dle své tabulky to pošle někam, nebo default(or zahození)
+
+host, router, hop
+hop - RIP, z routeru na druhý - 1 skočí jeden hop... hlavní metrika, dle počtu hopů
+
+IPv4
+Connectionless - bez spojení je jedno, zdali je na konci človek or not
+v hlavičce L3 packetu - dávám info sendera, I když to skrz bránu pošlu do jiného subnetu
+Nespolohlivé - žádná garance toho, že se to pošle. "Já to prostě vezmu, plácnu to tam a děj se vůle Boží"
+nezávislá na médiu - unlike L2, L1
+
+IPv6(IP budoucnosti)
+IPX ( neexistujr již)
+{}{}{}{}{}{}{}{}{}{}{}
+Hlavička Packetu:
+
+IP adresa sendera a recievera, TTL - kolik hopů má packet přežít(klasicky 32) - jinak by ty packety žily navždy -> kinda problem innit
+Flag - vlajka -> Do které VLANy patříme (do jakého subnetu)... tzv. Taguji
+NETWORK - 1. ip adresa BROADCAST - poslední IP adresa, MASKA všechno co je stejné - 1
+
+
+Zařízení na L3:
+Síťová karta:
+Router: HOP, Routovací tabulka (Koho kam posílám) - nejvýhodnější spoje dávám nejvýše prioritně, nejhorší níže. Když mám dvě stejně dobré (stejný počet hopů, tak dám obě)
+Default route ( Když to neznám, hodím to někam jinam (ISP))
+ARP Request: Jelikož odesílatel ví, kam to posílá, tak zjistí, zdali je v lokálním VLANu, zdali mám defaultní rouru
+ 
+L3 switch:
+switch, který dokáže směrovat toky mezi lokálními sítěmi
+
+L4: Transportní vrstva
+
+Odstíní vlastní přenos dat
+Do které aplikaci/do jaké části mají data spadnout
+80:http
+443:https
+2021:
+22:putty_ssh
+
+65k portů (2^16) Jsou tam defaultní porty na konci jsou dynamické 
+
+L5: Relační vrstva
+Navazuje, udržuje, ukončuje session mezi účastníky
+když spolu navážou komunikaci, tak předávají tuto info
+
+L6: "Typografie" dat 
+formátování, kódování, transformace dat
+
+L7: Aplikační vrstva -> Tam se s daty pracuje
+
+TCP ověření toho, že přišla data. u REAL TIME UDP - prostě pošle a doufá, Že dojdou (DNS překlad)
+
+Proč Máme vlastně tento model??
+
+Jednoduchost pochopení komunikace mezi počítači
+Členění protokolů
+model TCP/IP -> Ten reálný model, který se využívá
+
+Síťové rozhraní - 1-2 
+Vrstva internet (pakety) - 3
+Transportnín vrstva - 4
+Aplikační vrstva - 5-7 

@@ -1,0 +1,4 @@
+Zápočet :
+Dostaneme matematický základ, naprogramovat 3 mini programy s využítím algoritmů 
+from scratch
+

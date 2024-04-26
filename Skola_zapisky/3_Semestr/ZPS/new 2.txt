@@ -1,0 +1,3 @@
+nad DB pizzerie 
+tabulka zaměstnanci 
+TRIGGER -> hlídá plnoletost zaměstnance v datumu nástupu

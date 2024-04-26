@@ -1,0 +1,6 @@
+CREATE TABLE veci(
+id INTEGER PRIMARY KEY,
+nazev text NOT NULL,
+hmotnost INTEGER NOT NULL,
+popis text NOT NULL);
+

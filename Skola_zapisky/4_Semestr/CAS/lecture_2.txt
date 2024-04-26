@@ -1,0 +1,42 @@
+Metoda klouzavých průměrů 
+Znám tu křivku vyberu si dva body - od do, vyberu si nějaké pozorování, a pak z nich udělám průměrů
+
+
+Tímhle se zbavím sezónnosit -> počítám teďka jenom tu trendovou složku
+Zase tady problém s bandwithem (délkou) musím si vybrat správnou délku - malá mi nuekáže trend
+velká - neukáže mi detaily
+
+Hledáme vyhlazení v čase T
+
+Vzorečet
+Tr(t)tau = B0(t)+B1(t)tau+B2(t)sq(tau)+B3(t)cub(tau)
+
+tau mi jde od -m do m -> což jsou ty velikost pozorování (jakože kde jsem to utnul)
+
+minimalizuje (metody nejmenších čtverců) - parciální deravice 
+Vyřešim ty derivace (ew)
+
+Dostanu váhy Tau -> jsou středově souměrné kolem středu 
+Existují již tabulky váhy 
+
+Exponenciální vyrovnání:
+Mám výpočet pro vyrovnané hodnoty v čase 10, používám v čase 11 jen předešlé hodnoty 
+vážené průměry
+
+Uvažují se tyto trendy ->
+Lokálně konstantní, lokálně lineární a lokálně kvadratický trend, vyššího trendu se již nevyužíva
+´
+Jednoduche exp vyrovnávání - ziskám minimalizaci výrazu 
+od i do nekonečna Sum(Yt-i - B0)^2 *a^i
+a je mezi 0.7-1
+Daj se k tomuhle počítat i intervaly spolehlivosti 
+
+jednoduché exponenciální vyrovnání:
+Adaptivní řídící proces - definuje se indikátor poruchy 	
+
+Dvojité exponenciální vyrovnávání - > Zadám do zvorečku tend, minimalizuji -> zase fujky fujky derivace
+
+alfa 0.7 až 1 
+optimální volba při znalosti klouzavého průměru - alfa = sqrt((M-1)/(M+1))
+Ale to se nevyužívá. Je nám to jedno, protože to prostě hodíme do Rka a chillujeme
+

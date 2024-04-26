@@ -1,0 +1,11 @@
+L1:
+Topologie sítě
+Konektory
+typy kabelů
+koaxiál, kroucená dvoulinka, cat5, cat5e 6...
+optika - single, multi mody
+Hub a Repeater(2-portový hub)
+
+vertikální a horizontální komunikace 
+modulace signálu
+kódování

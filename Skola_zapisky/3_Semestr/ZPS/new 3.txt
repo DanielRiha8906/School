@@ -1,0 +1,41 @@
+Hlavička IP
+polovina vyplnit, nakreslit 
+DNS záznamy
+A záznamy - IPv4 - překlad doménového jména na IP
+AAAA záznam - IPv6 - 
+MX - Mail
+TXT - pomocí TXT můžeme klientovi vnutit "spoustu zajímavých věcí" -> používá se pro ověřování vlastnictví domény
+NS - name server aka DNS server - který server zpravuje DNS záznamy 
+SOA - administrativní infromace o DNS  - Start of Authority
+
+Směrování: 
+Vyjmenuj dynamický routovací protokol, do jakých skupin se dělí routovací protokoly...
+matrix(Interior (Distance Vector Routing Protocols) Exterior (Path Vector), Classful, classless, IPv6)
+Najít si matici
+Umět vyjmenovat + kategorizovat
+
+Email protokoly:
+SMTP, IMAP, POP
+SMTP - 25 - unsafe
+IMAP - 143/993 
+POP3 - 110/995
+SSL/TLS - 587/465
+143/110 nešifrované - 993/995 šifrované
+
+PORTY:
+Znát
+20/21, 22, 23, 25, 53, 67, 80, 88, 3389, 443, 27017
+ftp, ssh, telnet, smtp, dns, dhcp, http, Kerberos, RDP - remote desktop protocol, ssl, mongo
+
+Optické kabely - SC, LC, single/multi mode. Metalické kabely Strukturovaná linka - RJ45  T568-A/B
+CAT6 - RJ45 pro CAT6
+Koaxiální - BNC
+
+Přístupové metody -> 
+Stochastické metody - CSMA/CD metoda s vícenoásobným přístupem - může dojít k jamu, vysílá více lidí, které začnou v náhodný čas 
+Token ring - pešek
+
+VLSM x CIDR
+Variable length subnet mask
+Classless inter dynamic routing
+díky tomuhle fungujou masky v IP -> /24/8/6... 

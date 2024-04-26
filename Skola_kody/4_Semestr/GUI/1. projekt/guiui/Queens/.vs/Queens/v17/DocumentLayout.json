@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\guiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\guiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\chessboardvizualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\chessboardvizualizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\nqueenssolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\nqueenssolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|c:\\users\\danie\\desktop\\\u0161kola\\skola_kody\\guiui\\queens\\queens\\queens.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{B0A88CEC-2C52-4F67-B705-B109B5C1F272}|Queens\\Queens.csproj|solutionrelative:queens\\queens.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [N\u00E1vrh \u2013 zarm\u0161tina (Niger)]",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Form1.cs",
+              "RelativeDocumentMoniker": "Queens\\Form1.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Form1.cs [N\u00E1vrh \u2013 zarm\u0161tina (Niger)]",
+              "RelativeToolTip": "Queens\\Form1.cs [N\u00E1vrh \u2013 zarm\u0161tina (Niger)]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T10:03:41.79Z",
+              "EditorCaption": " [N\u00E1vrh \u2013 zarm\u0161tina (Niger)]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NQueensSolver.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\NQueensSolver.cs",
+              "RelativeDocumentMoniker": "Queens\\NQueensSolver.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\NQueensSolver.cs",
+              "RelativeToolTip": "Queens\\NQueensSolver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T09:49:32.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChessBoardVizualizer.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\ChessBoardVizualizer.cs",
+              "RelativeDocumentMoniker": "Queens\\ChessBoardVizualizer.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\ChessBoardVizualizer.cs",
+              "RelativeToolTip": "Queens\\ChessBoardVizualizer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T09:21:39.251Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GuiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\GuiConfig.cs",
+              "RelativeDocumentMoniker": "Queens\\GuiConfig.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\GuiConfig.cs",
+              "RelativeToolTip": "Queens\\GuiConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T09:19:40.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Form1.cs",
+              "RelativeDocumentMoniker": "Queens\\Form1.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Form1.cs",
+              "RelativeToolTip": "Queens\\Form1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T08:09:19.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Queens\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Form1.Designer.cs",
+              "RelativeToolTip": "Queens\\Form1.Designer.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAYwAkAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T08:10:29.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Program.cs",
+              "RelativeDocumentMoniker": "Queens\\Program.cs",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Program.cs",
+              "RelativeToolTip": "Queens\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T08:07:40.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Queens",
+              "DocumentMoniker": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Queens.csproj",
+              "RelativeDocumentMoniker": "Queens\\Queens.csproj",
+              "ToolTip": "C:\\Users\\danie\\Desktop\\\u0160kola\\Skola_kody\\guiui\\Queens\\Queens\\Queens.csproj",
+              "RelativeToolTip": "Queens\\Queens.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-02-22T09:45:40.857Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

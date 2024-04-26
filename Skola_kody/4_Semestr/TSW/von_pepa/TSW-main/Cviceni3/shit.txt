@@ -1,0 +1,17 @@
+from selenium import webdriver
+
+from selenium.webdriver.common.by import By
+driver = webdriver.Chrome()
+driver.get("http://127.0.0.1:5000/")
+
+driver.find_element(By.LINK_TEXT, "Picy").click()
+
+h2 = driver.find_element(By.TAG_NAME, "h2").text
+assert h2 == "Nabídka pic"
+
+first_pizza = driver.find_element(By.XPATH, "//ol/li[1]").text
+assert first_pizza == "čoky: 123"
+
+driver.find_element(By.LINK_TEXT, "Objednej").click()
+
+#Daníkova Hříbova pizza-Home page

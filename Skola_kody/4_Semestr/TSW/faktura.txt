@@ -1,0 +1,1 @@
+Pizza: {'název': 'grand méchant', 'cena': '0'}, Total: Neplatná objednávka!, Email: a@sdc.com

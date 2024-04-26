@@ -1,0 +1,6 @@
+Virtual insert
+Override or Shadowing (override/new)
+
+List<T> s = new ListWithStackExtensions<T>.... insert - Calls on List
+
+ListWithStackExtensions<s> = new ListWithStackExtensions<T> ... s.insert() - Calls on ListWithStackExtensions

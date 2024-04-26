@@ -1,0 +1,57 @@
+1.Nejhorší jest zpracování na straně klienta.
+2. Zpracování v jediném uzlu - přetížení jednoho uzlu 
+3. Distribuované zpracování
+
+Map reduce přístup
+Máme dokumenty - JSONy
+ukázky dokumentu
+{Jmeno:"...", Datum_narozeni:"..",  Bydliste:"...", [Služební cesty, , , , ...]} -> Fcí odstraním Bydliste, či vypočítám, kolik je člověku let dle data narození 
+D1, D2, D3,...,Dn -> prohodím fcí
+D1*,D2*,D3*,...,Dn*
+Pak druhá fáze Map induce -> redukce  (Map jest to za Selectem)
+Pak udělám redukci -> agregaci
+D123...n* -> jeden agregovaný dokument -> např. odstraním jméno a udělám AVG věku
+Na každém uzlu jsou nějaká data -> Mapuji (aka prohodím fcí na D1*), ale dá se agregovat I na hlavním uzlu -> Každý uzel udělá SUMU -> na jednom přístupovém uzlu udělám AVG
+Základní model  ^^^^^
+
+Tento model se dá vylepšit. 
+Nemusí to být jeden dokument, nýbrž to může být např žádný dokument -> Bydliště lidí v jednom místě
+Filtrování ^^^^ -> speciální mapování
+
+Libovolný poČet dokumentů - Služební cesty 
+Přijde člověk a všechny jeho služební cesty budou output. 
+Udělám si n-dokumentů, ke každé služ. cestě, kde byli lidi.
+
+Řekli jsme si, že agregační část vrací jen jeden dokument. Takhle to není.
+Může vracet více dokumentů -> Pro každou pozici udělá AVG plat (Group BY)
+
+Ve skutečnosti tam není jen mapování a redukce, nýbrž tam jsou i více fcí
+COLLECT -> přijde operace, Collect znamená, že z jednoho dokumentu udělá složený dokument.
+Přijde tam dokument zaměstnanců a udělá z toho seznam[] zaměstnanců. Až poté, co přijdou všechny dokumenty se to udělá
+Rn si uvědomil, že Collect je speciální případ redukce.
+
+Třídění -> speciální stupeň mapování (??)
+Vstupuje dovnitř N dokumentů. -> -> -> SORT
+a výsledkem jest N dokumentů, které jsou setříděné
+TAK TO ZASE NENÍ SPECIÁLNÍ OPERACE FFS -> je to map >//<
+D1,D2,D3 -> MAP -> D1*,D2*,D3*
+
+S tím, že může probíhat více funkcí map 
+
+Začal se bavit o SQL syntaxu a jsem confuseé
+
+Co jest na tom nejlepší je, že to prochází distribuovaně -> Rychlejší než SQL
+klíčová normalizace -> Většinou jsou stejná data u sebe -> Je to tudíž efektivní když dělám tuto distribuovanost
+
+
+MONGO aggregation Pipeline 
+db.collection.aggregate() -> tam dám seznam funkcí - map, reduce, collect, filter
+filter $match
+Group_by $group
+Když bude velký chain pizzerií, tak se hodí Mongo, jinak je lepší prostě excel
+
+
+Je možnost i přidávat attributy -> Prodej pizz, cena se počítá vrámci seskupování -> udělám si pipelinu a v tom mapování se spočítá např cena Pizzy, cena s dph a bez
+
+
+Poté na této hodině jen čtení mongoDB pipeline dokumentace. Boring af. žádná reálná aplikace ukázána.

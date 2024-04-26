@@ -1,0 +1,15 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        id: my_label
+        text: str(slider.value)
+    Slider:
+        id: slider
+        min: 0
+        max: 100
+        value: 50
+        on_value: my_label.text = str(self.value)
+    ProgressBar:
+        id: progress_bar
+        max: 100
+        value: slider.value

@@ -1,0 +1,34 @@
+Zápočet a zkouška, 
+
+Zápočet: Seminárka vypracovat tak 70% úkolů. Bude je random pitchovat na hodinách
+Zkouška: Kecací + dodání seminárky
+Rapids AI
+
+Machine learning
+Nejčastější úlohy:
+Klasifikace: data označuji X mám matici, kde mám váha, výška, věk... jestli člověk má nemoc A, či ne - což je label (0/1 nebo -1/1: binární)
+Mám nějaké ty data a musím z toho zjistit, jestli je např. obézní: pokuď má váhu/výšku a zjisti to, cápek to musí olabelovat. ML se učí z X a z Y
+
+regrese: Mám stejné X, místo labelu se snažím odhadnout počet inzulinu v krvi. Hodně blízké s klasifikací. Zase učení se s učitelem. Musím mít X a Y 
+
+Datový bod: jedna entita v datasetu je x = (x1,x2,...xn) mám vektor, potřebuji normovat data (většinou) - bílá, modrá -> převést na kvantitavní
+při různých algoritmech musím mít i například stejná měřítka
+Datový bod si mohu představit jako bod v n-rozměrném prostoru (příznakovém prostoru)
+
+Shlukování: je to hledání datových bodů, které jsou blízko sebe -> jestli tam nemám množiny blízko sebe
+
+redukce dimenzionality: lineární kombinace sloupců, či redukce nekauzálních informací (nekovariantních), nebo při hodně řádcích a shlukování udělám transformaci, abych z toho shluku měl jenom jeden záznam
+
+Detekce anomálií: Snažíme se vybrat v daném datasetu anomálii, která nastává a musím určit, zdali je to něco, co se zřídka stává, jestli je to anomálie, která je kladná, či záporná.
+
+DARPA DATA SET - Cool Kyberberzpečnostní bakalářka
+
+Vždycky když mám dataset -> rozdělit na dva at the very least -> Trénovací a testovací data
+
+Lineární regrese - bude potřeba umět
+BMI = y 
+y = a0 +a1*h + a2*w
+y head je ypsilon s střížkou -> co mi řekne ten model 
+mám tam teda|| y - yhead|| minimum z čtverců 
+
+Je tam převádění na transponované matice, aby mi potom součin XT * X*alfa = XT * Y dal místo například 1000*1000 na 3*3

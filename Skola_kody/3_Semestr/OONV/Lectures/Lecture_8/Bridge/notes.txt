@@ -1,0 +1,7 @@
+Not really implementation of bridge, since our display is just a converter instead of display
+So it should be more like bitmap stuff
+
+HW: Update source, display and converter 
+So source could be attained by webscrapping
+display would actually be display
+and converter would not be called display

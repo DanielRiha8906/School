@@ -1,0 +1,14 @@
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\bin\Debug\net7.0\Adapter.exe
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\bin\Debug\net7.0\Adapter.deps.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\bin\Debug\net7.0\Adapter.runtimeconfig.json
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\bin\Debug\net7.0\Adapter.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\bin\Debug\net7.0\Adapter.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.AssemblyInfoInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.AssemblyInfo.cs
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.csproj.CoreCompileInputs.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\refint\Adapter.dll
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.pdb
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\Adapter.genruntimeconfig.cache
+C:\Users\danie\Desktop\Škola - kódy\OONV\Lectures\Lecture_8\Adapter\obj\Debug\net7.0\ref\Adapter.dll

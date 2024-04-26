@@ -1,0 +1,68 @@
+Úkol - pouze 5 skupin podle počátečních číslic proměnné SES
+Rozdíl + rozdíly dvojic, ohodnotit statistickou tak věcnou významnost
+
+UScereal rozdělit dle měřielných parametrů, vynechat mfr
+
+3.
+hlavní komponenty/faktorová analýza, výsledky číslených testů v grafu. 
+
+popis postupu, shrnutí výsledku
+odevzdání ideálně 14 dní
+_______________________________________________________________________
+
+Při zkoušení - > X = LF + e  a podmínky, zbytek je sraja
+
+
+Diskriminační analýza
+Mnoho populací na kterých měříme ukazatele, pomocí těch ukazatelů máme být schopný poznat populace mezi sebou
+
+dopředu máme nějaké skupiny a ukazatele, pomocí toho všeho chceme určit funkci (funcke), které nám umožňují určit do jaké populace patří
+když přijde nová jednotka, tak ho dokážeme do populace
+
+
+Uvažujeme dvě populace s průměry X1,n a X2,n. Vzdálenosti těchto průmérů Mahalanobisová vzdálenost
+
+LDA - Lineární diskriminační analýza -> 2 skupiny, přímka mezi skupinama
+
+v moment, kdy mi nestačí přímka, ale například kružnice, vlnka... whatever
+Tak se používá kvadratická dis. analýza -> špatně se počítá, takže tough shit na víc proměnných (dimenzí), populací
+
+S1 = 1/n1-1(Sum(Xi - X)^T(Xi-X)
+S2 = 1/n2-1(Sum(Yi - Y)^T(Yi-Y)
+
+
+S = (n1-1/(n1-1)+(n2-1))*S1 + (n2-1/(n1-1)+(n2-1))*S2
+
+Je skoro vždycky nějaké překrytí dat u této analýzy -> Tudíž se přidávaj apriorní pravděpodobnosti 
+
+to chybné zařazení se dá ještě penalizovat, dá se tam přidat nějaký další člen
+
+nějaká konstanta *  x^2 ale to tam přidá potom, až se uvidíme na konci semestru
+Máme vědět, že to je, výpočty si nepamatovat na zkoušku :)
+
+
+Shluková analýza
+Postupně se mi to rozdělí na skupiny, které potom spojuji a spojuji, dokuď se nedospojuji do jedné skupiny
+Vzdálenost skupin se dá měři trojím způsobem
+Average linkage (průměr), single (vzdálenost nejbližších bodů), complete linkage(vzdálenost nejzazších bodů)
+
+Máme tyto skupiny, ty potom spojujeme, tohle nám ukazuje dendogram
+graficky pak hledám, kde ukončit shlukování - aka kolik skupin je optimální, hodně subjektivní na pohledu analytika, kouknout se jestli je rozdíl mezi skupinama
+_______________________________________________________________________
+
+K-Means - > viz Kubera
+
+vyhodnocování dotazníků - hierarchické shlukování - skupiny pro outliery
+						  K-means - tahle analýza neudělá skupiny pro outliery
+Pak ale při přídání se to musí znova přepočítat u k-means
+
+Kanonické korelace
+2 skupiny číselných hodnot a potřebuji měřit korelaci -> kanon. korelace 
+V obou skupin hledám lineární kombinace pro ty druhé, chci aby tyhle proměnné měli mezi sebou největší korelaci
+
+Vytvoří se kanonické proměnné, které mají mezi sebou ma. korelaci
+Pak hledám kanonické proměnné, které jsou kolné na ty ^^^, tak pokračujeme, až najdeme vśechny páry kanonické proměnné
+Pak hledám to, kde je nejvíc párů or something, to jsem nestihl
+
+Dostaneme hodnoty kanonických korelací, v porovnání nabývají větších hodnot než klasických korelací 
+jsou na to nějaké testy (přídá je)

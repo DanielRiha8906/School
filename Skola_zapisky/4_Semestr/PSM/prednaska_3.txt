@@ -1,0 +1,91 @@
+Testy na kategorických datech: 
+
+
+Chí kvadrát test
+H0: proměnné na sobě nezávisí 
+h1: proměnné na sobě závísí
+
+popisuje se pomocí očekávaných četností
+Pravděpodobnost průniku A a b = P(A) * P(B)
+Bývalý kuřák, nekuřák, slabý kuřák, silný kuřák
+ZŠ	6			13			52			6
+SŠ	10			22			39			1
+VŠ	11			23			18			3
+
+A = nekuřák 
+B... VŠ
+P(AnB) = 23/204
+nekuřák * P(Vš) 
+58/204 * 55/204
+
+Chi kvadrát má tvar
+SumaSuma (porozované,ij - ocekavane,ij)^2/ocekavane,ij
+sumy přes řádky a sloupce i,j
+očekávané je 58/204 * 55/204 *204 = 15,6372
+V našem případě by výsledek byl - 3,5117
+
+Jakožto jedna ta suma, ale musel bych to udělat pro všechny řádky+sloupce
+
+Předpokladem chíkvadrát-testu je, že všechny očekávané četnosti jsou větší než 5
+Pokuď předpoklad není splněn -> Fisherův faktoriálový test
+počítá se tam s faktoriálama, násobí se mezi sebou -> pro malé četnosti ok, ale faktoriál pro 100 už je kinda hard i pro počítaČe
+
+
+poměr šancí - nejdřív definuji šanci "Mám chřipku, nemám chřipku"
+poměr šancí: 
+Odds(a) v pop1/ Odds(a) v pop2 
+Odds ratio - Jsou ty populace stejné or nor ? H0: OR=1, H1: OR!=1
+
+Věcná významnost - výše uvedené testy měří statistickou významnost 
+P-hodnota statistického testu závisí na počtu pozorování
+málo pozorování dává velkou p-hodnotu
+hodně pozorování -> malá p-hodnoty.
+statistické testy dobře funhují pro počet pozorování okolo 100 hodnot!!!
+
+
+
+existuje vztah mezi počtem pozorování, hladinou významnosti a silou testu.
+
+2*(z(1-alfa)+z(1-beta)/|u1-u2|/o)^2
+z kvantily normálního rozdělení,
+hladina významnosti alfa
+síla testu 1-beta
+jak velký rozdíl mezi skupinami |u1-u2|
+o variabilita
+
+existují obdobné vztahy pro jiné testy (tenhle byl pro dvouvýběrový t-test
+
+Byli vytvořené indexy (ukazatele) pro věcnou významnost (rozdíl jednoho kila na rpůměr je třeba úplný prd)
+tyto indexy se používají při velkém vzorku dat
+
+Ukazatele (pro dovuvýběrový test):
+Průměr - průměr, a pak poberu variabilitu
+nebo to vydělím zbytovým průměrným součtem čtverců z tabulky analýzy rozptylů
+nebo si vemu kontrolní data, ze kterých si spočítám variabilitu a vydělím to tím
+05.-0.8, 0.8, 0.8+
+
+
+Porovnání více než dvou skupin (ANOVA)
+Fisherovo N^2
+SSA/SST procento vysvětlené variability
+SSA a SST jsou součty čtverců z tabulky analýzy rozptylů
+
+Haysova w^2
+SSA-(k-1)MSe/ SST+MSe
+
+porovnávání dvou kategorických proměnných (chíkvadrát-test):
+používá se tam ten chí kvadrát
+Cramerovo o
+
+o = sqrt(chí^2/n)
+
+0.29, 0.3 - 0.49, 0.5+
+Cramerovo V
+V =sqrt(chí^2/n(l-1))
+hodnota 0-1 chovají se přibližně jako korelační koeficient
+
+
+Porovnnávání dvou číselných proměnných (korelační koeficient, lineární regrese)
+ 
+Korelační koeficient
+pro lin.regresi je koeficient determinace R^2
