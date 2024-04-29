@@ -1,0 +1,111 @@
+Máme nějaké tři nodes
+x1, x2, x3 
+1) P(x1,x2,x3) 
+Jaká je pravděpodobnost, že X3 je pravda na základě x1,x2 
+Product rule
+P(x1,x2,x3)/ P(x1,x2)
+
+P(x1,x2,x3) = P(x3/x1,x2) * P(x1,x2)
+Společné rozdělení (join distribution)
+Řětězová pravidla - CHAIN rule
+ 
+P(x3/x1,x2) * P(x2/x1) * P(x1) 
+
+P(x1,x2,x3,x4) = P(x4/x1,x2,x3) * P(x1,x2x3)
+    - > O
+O
+    - > O
+x1 je rodič
+
+X1 -> X2 -> X3 -> X6
+X4-> X5-> X6
+
+P(Xi/Xi-1, ... x1) = Součin(1 až i ) P(xi)/P(parents)
+
+
+
+SUMin rule - Úplná pravděpodobnost 
+
+V -> A
+Z -> A
+A -> T
+A -> E 
+(VA, ZA, AT, AE)
+
+Bajeskovská síť -> Pravděpodobnost nad jednotlivými rysi. (V - 0.001, Z - 0.002, T 0.7, E - 0.8)
+Pro A pravděpodobnost - V TTFF, Z - TFTF A (0.024, ? , ? 0.001)
+P(T,E,A, not(V), not(Z))
+P(0.7, 0.8, 0.001, 0,999, 0,998) spačítéma spolvečnou pravděpodobnost
+= 0,000628 - kouknu a vidím ne ? 
+
+P(V/A, T, E, not(Z))
+P(A,T,E,not(Z),V)/P(A,T,E,not(Z))
+Jmenovatel, může být ukázan pomocí sum all rule P(x1,x2,x3,x4,x5(v)) + P(X1,x2,x3,x4,not(x5))
+P(A,T,E,not(Z),V)/P(A,T,E,not(z),V) + P(A,T,E,not(z),V)
+Aposteriorní je 0.5 (apparently)
+
+Náhodná žárovka z továren
+T1 - 0.7  -> A
+T2 - 0.3  -> A
+A - pravěpodobnost, že nahodilá žárovka je funkční - 
+P(A/T1) - 0.9
+P(A/T2) - 0.6
+P(A) = P(A/T1) * P(T1) + P(A/T2) * T2
+
+
+Máme přesně 100 aut a 3 uzly ukazují, jak jsou auta starý
+B1 (<2) B2(2<B<7) B3(>7)
+30    50        20
+B1 -> A, B2 -> A, B3 -> A
+P(A/B1) = 0.1, P(A/B2) - 0.5, P(A/B3) = 0.75
+Sum(1 - i(3)) = P(Bi) * P(A/Bi)= 0.43 (apparently)
+
+BAYES RULE  abrácené pravděpodobnost
+
+
+P(B1/A) = P(A/B1) * P(B1) /P(A) = 0.07
+
+Kurózní příklad :O 
+Máme nějakou vzácnou nemoc, kde je malá pravděpodobnost, že někdo má nemoc
+
+
+A - 0.001, not(A) - 0.999
+
+B - Povrzuje nemoc 
+A -> B
+not(A) -> B
+P(B/A) - 0.99 - prý je to obviously jasné 
+
+P(B/not(A)) - 0.05 - chybovost testu
+
+
+P(A/B) = P(B/A) * P(A) /P(B) = 0.001*0.99/0.001*0.99 + 0.05*0.99  = 0.019 
+1 - P(A/B) = 0.98 
+Tato hodnota je 19x větší, nežli P(A), proto je to tak epický, kuriózní příklad :O 
+ 
+Jak získat podmíněné pravděpodobnosti ? 
+P(X3/x1,x2) = P(X1,x2,x3)/P(x1x2)
+
+Table -> 
+X1, x2, x3
+t   t   t
+t   t   f
+t   f   t
+t   f   f
+f   t   t
+f   t   f 
+f   f   t 
+f   f   f
+
+pak už tam dělá nějaký čachry machry, kde dľeá 20/80 takže pravděpodobnost 0.25 - Zjištění pomocí experimentu
+
+UČENÍ :
+
+Relativní četnost f = 3/6 - házení mince, takže pravděpodobnost orla jest 0.5 P(X1 = y)
+f = 3+8/6+10 = 11/16
+
+beta(F,alfa,beta) = const x(a-1)*(1-x) (b-1) 
+
+Prostě se to postupně mění. Yes Yes 
+			   
+
