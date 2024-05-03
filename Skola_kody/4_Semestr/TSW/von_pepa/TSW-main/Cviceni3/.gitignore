@@ -1,0 +1,27 @@
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venvis/
+.venv/
+
+# Python distributions
+*.egg-info/
+dist/
+build/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+*.idea/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
